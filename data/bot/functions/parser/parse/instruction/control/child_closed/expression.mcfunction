@@ -1,1 +1,1 @@
-data modify storage bot:parser stack[-1].args append from storage bot:parser parsed
+data modify storage glm:parser stack[-1].args append from storage glm:parser parsed

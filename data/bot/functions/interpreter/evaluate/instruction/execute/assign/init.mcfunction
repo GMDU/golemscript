@@ -1,3 +1,3 @@
-execute if data storage bot:interpreter evaluate.current{variant:"let"} run function bot:interpreter/evaluate/instruction/execute/assign/let
-execute if data storage bot:interpreter evaluate.current{variant:"const"} run function bot:interpreter/evaluate/instruction/execute/assign/const
-execute if data storage bot:interpreter evaluate.current{variant:"var"} run function bot:interpreter/evaluate/instruction/execute/assign/var
+execute if data storage glm:interpreter evaluate.current{variant:"let"} run function glm:interpreter/evaluate/instruction/execute/assign/let
+execute if data storage glm:interpreter evaluate.current{variant:"const"} run function glm:interpreter/evaluate/instruction/execute/assign/const
+execute if data storage glm:interpreter evaluate.current{variant:"var"} run function glm:interpreter/evaluate/instruction/execute/assign/var

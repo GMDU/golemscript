@@ -1,1 +1,1 @@
-function bot:parser/parse/literal/object/set_value
+function glm:parser/parse/literal/object/set_value

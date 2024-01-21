@@ -1,7 +1,7 @@
-data modify storage bot:interpreter utils.stringify.stack set value []
-data modify storage bot:interpreter utils.stringify.result set value []
-data modify storage bot:interpreter utils.stringify.stack append from storage bot:interpreter utils.stringify.target
+data modify storage glm:interpreter utils.stringify.stack set value []
+data modify storage glm:interpreter utils.stringify.result set value []
+data modify storage glm:interpreter utils.stringify.stack append from storage glm:interpreter utils.stringify.target
 
-function bot:interpreter/utils/stringify/main
+function glm:interpreter/utils/stringify/main
 
-data remove storage bot:interpreter utils.stringify.target
+data remove storage glm:interpreter utils.stringify.target

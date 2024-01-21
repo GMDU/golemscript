@@ -1,3 +1,3 @@
-data remove storage bot:helpers/registry target[0].filter[0]
-execute if data storage bot:helpers/registry target[0].filter[] run data modify storage bot:helpers/registry output.matches append from storage bot:helpers/registry target[0]
-execute unless data storage bot:helpers/registry target[0].filter[] run data modify storage bot:helpers/registry output.exact set from storage bot:helpers/registry target[0].data
+data remove storage glm:helpers/registry target[0].filter[0]
+execute if data storage glm:helpers/registry target[0].filter[] run data modify storage glm:helpers/registry output.matches append from storage glm:helpers/registry target[0]
+execute unless data storage glm:helpers/registry target[0].filter[] run data modify storage glm:helpers/registry output.exact set from storage glm:helpers/registry target[0].data

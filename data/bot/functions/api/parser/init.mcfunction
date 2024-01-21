@@ -1,14 +1,14 @@
-execute unless data storage bot:api/parser init.target[] run data modify storage bot:api/parser init.error set value "[API] Expected a list of strings as input."
-execute unless data storage bot:api/parser init.target[] run return 400
+execute unless data storage glm:api/parser init.target[] run data modify storage glm:api/parser init.error set value "[API] Expected a list of strings as input."
+execute unless data storage glm:api/parser init.target[] run return 400
 
-data modify storage bot:parser target set from storage bot:api/parser init.target
-function bot:parser/init
+data modify storage glm:parser target set from storage glm:api/parser init.target
+function glm:parser/init
 
-data remove storage bot:api/parser init
+data remove storage glm:api/parser init
 
-execute if data storage bot:parser {exit:false} run data modify storage bot:api/parser init.error set from storage bot:parser output
-execute if data storage bot:parser {exit:false} run return 400
+execute if data storage glm:parser {exit:false} run data modify storage glm:api/parser init.error set from storage glm:parser output
+execute if data storage glm:parser {exit:false} run return 400
 
-data modify storage bot:api/parser init.output set from storage bot:parser output
+data modify storage glm:api/parser init.output set from storage glm:parser output
 
 return 200

@@ -1,3 +1,3 @@
-data remove storage bot:helpers/registry output
+data remove storage glm:helpers/registry output
 
-function bot:helpers/registry/iterate
+function glm:helpers/registry/iterate

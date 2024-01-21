@@ -1,5 +1,5 @@
-execute unless data storage bot:parser current{value:"("} run data modify storage bot:parser stack append value {type:"literal",variant:"alphanumeric"}
-execute unless data storage bot:parser current{value:"("} run return -1
+execute unless data storage glm:parser current{value:"("} run data modify storage glm:parser stack append value {type:"literal",variant:"alphanumeric"}
+execute unless data storage glm:parser current{value:"("} run return -1
 
-data modify storage bot:parser current.consumed set value true
-data modify storage bot:parser stack[-1].metadata.status set value "parameters"
+data modify storage glm:parser current.consumed set value true
+data modify storage glm:parser stack[-1].metadata.status set value "parameters"

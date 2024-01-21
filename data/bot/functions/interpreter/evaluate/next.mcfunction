@@ -1,3 +1,3 @@
-data modify storage bot:interpreter evaluate.stack append from storage bot:interpreter evaluate.next
-data remove storage bot:interpreter evaluate.next
-data remove storage bot:interpreter evaluate.replace
+data modify storage glm:interpreter evaluate.stack append from storage glm:interpreter evaluate.next
+data remove storage glm:interpreter evaluate.next
+data remove storage glm:interpreter evaluate.replace

@@ -1,2 +1,2 @@
-execute unless data storage bot:interpreter evaluate.current.metadata.status run function bot:interpreter/evaluate/unary_operation/evaluate
-execute if data storage bot:interpreter evaluate.current.metadata{status:"evaluated"} run function bot:interpreter/evaluate/unary_operation/perform_operation
+execute unless data storage glm:interpreter evaluate.current.metadata.status run function glm:interpreter/evaluate/unary_operation/evaluate
+execute if data storage glm:interpreter evaluate.current.metadata{status:"evaluated"} run function glm:interpreter/evaluate/unary_operation/perform_operation

@@ -1,2 +1,2 @@
-execute if data storage bot:parser stack[-1].metadata.close{type:"single"} run function bot:parser/close/check/single
-execute if data storage bot:parser stack[-1].metadata.close{type:"alternate"} run function bot:parser/close/check/alternate
+execute if data storage glm:parser stack[-1].metadata.close{type:"single"} run function glm:parser/close/check/single
+execute if data storage glm:parser stack[-1].metadata.close{type:"alternate"} run function glm:parser/close/check/alternate

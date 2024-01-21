@@ -1,1 +1,1 @@
-data modify storage bot:interpreter error set value '{"text":"RuntimeError: Procs cannot bind to other procs"}'
+data modify storage glm:interpreter error set value '{"text":"RuntimeError: Procs cannot bind to other procs"}'

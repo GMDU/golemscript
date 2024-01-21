@@ -1,6 +1,6 @@
-data modify storage bot:interpreter evaluate.assign.name set from storage bot:interpreter evaluate.stack[-1].a_original.value
-data modify storage bot:interpreter evaluate.assign.value set from storage bot:interpreter evaluate.stack[-1].b
+data modify storage glm:interpreter evaluate.assign.name set from storage glm:interpreter evaluate.stack[-1].a_original.value
+data modify storage glm:interpreter evaluate.assign.value set from storage glm:interpreter evaluate.stack[-1].b
 
-function bot:interpreter/evaluate/binary_operation/operations/assign/set
+function glm:interpreter/evaluate/binary_operation/operations/assign/set
 
-data modify storage bot:interpreter evaluate.operation.result set from storage bot:interpreter/evaluate stack[-1].b
+data modify storage glm:interpreter evaluate.operation.result set from storage glm:interpreter/evaluate stack[-1].b

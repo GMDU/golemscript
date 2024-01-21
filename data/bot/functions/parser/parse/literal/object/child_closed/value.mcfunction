@@ -1,1 +1,1 @@
-data modify storage bot:parser stack[-1].metadata.pair.key set from storage bot:parser parsed.value
+data modify storage glm:parser stack[-1].metadata.pair.key set from storage glm:parser parsed.value

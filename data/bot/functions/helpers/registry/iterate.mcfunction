@@ -1,8 +1,8 @@
-data modify storage bot:helpers/registry compare set value true
+data modify storage glm:helpers/registry compare set value true
 
-execute store success storage bot:helpers/registry compare byte 1 run data modify storage bot:helpers/registry target[0].filter[0] set from storage bot:helpers/registry key
+execute store success storage glm:helpers/registry compare byte 1 run data modify storage glm:helpers/registry target[0].filter[0] set from storage glm:helpers/registry key
 
-execute if data storage bot:helpers/registry {compare:false} run function bot:helpers/registry/match
+execute if data storage glm:helpers/registry {compare:false} run function glm:helpers/registry/match
 
-data remove storage bot:helpers/registry target[0]
-execute if data storage bot:helpers/registry target[] run function bot:helpers/registry/iterate
+data remove storage glm:helpers/registry target[0]
+execute if data storage glm:helpers/registry target[] run function glm:helpers/registry/iterate

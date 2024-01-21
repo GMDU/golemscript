@@ -1,10 +1,10 @@
-data modify storage bot:parser current.value set from storage bot:parser iterate.target[0]
-data remove storage bot:parser iterate.target[0]
-data modify storage bot:parser current.flags append from storage bot:parser next.flags[]
-data remove storage bot:parser next
+data modify storage glm:parser current.value set from storage glm:parser iterate.target[0]
+data remove storage glm:parser iterate.target[0]
+data modify storage glm:parser current.flags append from storage glm:parser next.flags[]
+data remove storage glm:parser next
 
-function bot:parser/characters/check
-execute unless data storage bot:parser current{consumed:true} run function bot:parser/parse/init
+function glm:parser/characters/check
+execute unless data storage glm:parser current{consumed:true} run function glm:parser/parse/init
 
-data merge storage bot:parser {current:{consumed:false,flags:[]},temp:{}}
-execute if data storage bot:parser iterate.target[] if data storage bot:parser {raise:""} run function bot:parser/iterate
+data merge storage glm:parser {current:{consumed:false,flags:[]},temp:{}}
+execute if data storage glm:parser iterate.target[] if data storage glm:parser {raise:""} run function glm:parser/iterate

@@ -1,1 +1,1 @@
-execute if data storage bot:parser current{value:"["} run data modify storage bot:parser expression.type set value {type:"literal",variant:"array"}
+execute if data storage glm:parser current{value:"["} run data modify storage glm:parser expression.type set value {type:"literal",variant:"array"}

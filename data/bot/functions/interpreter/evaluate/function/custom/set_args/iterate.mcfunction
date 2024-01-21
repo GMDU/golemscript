@@ -1,10 +1,10 @@
-data modify storage bot:interpreter evaluate.variable.name set from storage bot:interpreter temp.parameters[0]
-data modify storage bot:interpreter evaluate.variable.value set from storage bot:interpreter evaluate.stack[-1].args[0]
-execute unless data storage bot:interpreter evaluate.stack[-1].args[] run data modify storage bot:interpreter evaluate.variable.value set value {type: "undefined", value: false}
+data modify storage glm:interpreter evaluate.variable.name set from storage glm:interpreter temp.parameters[0]
+data modify storage glm:interpreter evaluate.variable.value set from storage glm:interpreter evaluate.stack[-1].args[0]
+execute unless data storage glm:interpreter evaluate.stack[-1].args[] run data modify storage glm:interpreter evaluate.variable.value set value {type: "undefined", value: false}
 
-function bot:interpreter/evaluate/instruction/execute/assign/assign
+function glm:interpreter/evaluate/instruction/execute/assign/assign
 
-data remove storage bot:interpreter temp.parameters[0]
-data remove storage bot:interpreter evaluate.stack[-1].args[0]
+data remove storage glm:interpreter temp.parameters[0]
+data remove storage glm:interpreter evaluate.stack[-1].args[0]
 
-execute if data storage bot:interpreter temp.parameters[] run function bot:interpreter/evaluate/function/custom/set_args/iterate
+execute if data storage glm:interpreter temp.parameters[] run function glm:interpreter/evaluate/function/custom/set_args/iterate

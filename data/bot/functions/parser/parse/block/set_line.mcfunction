@@ -1,1 +1,1 @@
-data modify storage bot:parser stack append value {type:"line"}
+data modify storage glm:parser stack append value {type:"line"}

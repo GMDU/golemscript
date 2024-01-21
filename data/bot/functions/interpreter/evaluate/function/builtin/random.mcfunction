@@ -1,7 +1,7 @@
 # random (min, max) = RANDOM_NUMBER % (max - min + 1) + min
 
-execute store result score .min bot.interpreter run data get storage bot:interpreter evaluate.stack[-1].args[0].value
-execute store result score .max bot.interpreter run data get storage bot:interpreter evaluate.stack[-1].args[1].value
+execute store result score .min bot.interpreter run data get storage glm:interpreter evaluate.stack[-1].args[0].value
+execute store result score .max bot.interpreter run data get storage glm:interpreter evaluate.stack[-1].args[1].value
 
 function moxlib:api/math/random
 
@@ -14,5 +14,5 @@ scoreboard players operation .result bot.interpreter = $rng moxlib.api.math.rand
 scoreboard players operation .result bot.interpreter %= .mod bot.interpreter
 scoreboard players operation .result bot.interpreter += .min bot.interpreter
 
-data modify storage bot:api/interpreter/function execute.return set value {type:"literal", variant: "integer", value: 0}
-execute store result storage bot:api/interpreter/function execute.return.value int 1 run scoreboard players get .result bot.interpreter
+data modify storage glm:api/interpreter/function execute.return set value {type:"literal", variant: "integer", value: 0}
+execute store result storage glm:api/interpreter/function execute.return.value int 1 run scoreboard players get .result bot.interpreter

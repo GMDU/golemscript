@@ -1,3 +1,3 @@
-execute if data storage bot:parser stack[-1].metadata{status:"value"} run function bot:parser/parse/instruction/func/child_closed/value
-execute if data storage bot:parser stack[-1].metadata{status:"name"} run function bot:parser/parse/instruction/func/child_closed/name
-execute if data storage bot:parser stack[-1].metadata{status:"parameters"} run function bot:parser/parse/instruction/func/child_closed/parameters
+execute if data storage glm:parser stack[-1].metadata{status:"value"} run function glm:parser/parse/instruction/func/child_closed/value
+execute if data storage glm:parser stack[-1].metadata{status:"name"} run function glm:parser/parse/instruction/func/child_closed/name
+execute if data storage glm:parser stack[-1].metadata{status:"parameters"} run function glm:parser/parse/instruction/func/child_closed/parameters

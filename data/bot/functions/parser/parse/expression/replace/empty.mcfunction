@@ -1,2 +1,2 @@
-data remove storage bot:parser stack[-1]
-data modify storage bot:parser stack append value {type:"meta",variant:"undefined"}
+data remove storage glm:parser stack[-1]
+data modify storage glm:parser stack append value {type:"meta",variant:"undefined"}

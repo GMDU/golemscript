@@ -1,1 +1,1 @@
-execute if data storage bot:parser current{value:" "} run data modify storage bot:parser current merge value {flags:["whitespace","meta"]}
+execute if data storage glm:parser current{value:" "} run data modify storage glm:parser current merge value {flags:["whitespace","meta"]}

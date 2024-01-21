@@ -1,3 +1,3 @@
-execute unless data storage bot:parser stack[-1].metadata{exclude:["function"]} if data storage bot:parser current{value:"("} run function bot:parser/parse/literal/alphanumeric/open/function
-execute unless data storage bot:parser stack[-1].metadata{exclude:["resource"]} if data storage bot:parser current{value:":"} run function bot:parser/parse/literal/alphanumeric/open/resource
-execute unless data storage bot:parser temp{variant:true} run function bot:parser/parse/literal/alphanumeric/open/body
+execute unless data storage glm:parser stack[-1].metadata{exclude:["function"]} if data storage glm:parser current{value:"("} run function glm:parser/parse/literal/alphanumeric/open/function
+execute unless data storage glm:parser stack[-1].metadata{exclude:["resource"]} if data storage glm:parser current{value:":"} run function glm:parser/parse/literal/alphanumeric/open/resource
+execute unless data storage glm:parser temp{variant:true} run function glm:parser/parse/literal/alphanumeric/open/body

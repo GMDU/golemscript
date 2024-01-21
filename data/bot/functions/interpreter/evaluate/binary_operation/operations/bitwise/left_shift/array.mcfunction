@@ -1,10 +1,10 @@
-data modify storage bot:interpreter evaluate.operation.result set from storage bot:interpreter evaluate.stack[-1].a
-data modify storage bot:interpreter evaluate.operation.result.value append from storage bot:interpreter evaluate.stack[-1].b
-data modify storage bot:interpreter evaluate.operation.result.original_value append from storage bot:interpreter evaluate.stack[-1].b_original
+data modify storage glm:interpreter evaluate.operation.result set from storage glm:interpreter evaluate.stack[-1].a
+data modify storage glm:interpreter evaluate.operation.result.value append from storage glm:interpreter evaluate.stack[-1].b
+data modify storage glm:interpreter evaluate.operation.result.original_value append from storage glm:interpreter evaluate.stack[-1].b_original
 
-execute unless data storage bot:interpreter evaluate.stack[-1].a_original{type:"literal",variant:"variable"} run return -1
+execute unless data storage glm:interpreter evaluate.stack[-1].a_original{type:"literal",variant:"variable"} run return -1
 
-data modify storage bot:interpreter evaluate.assign.name set from storage bot:interpreter evaluate.stack[-1].a_original.value
-data modify storage bot:interpreter evaluate.assign.value set from storage bot:interpreter evaluate.operation.result
+data modify storage glm:interpreter evaluate.assign.name set from storage glm:interpreter evaluate.stack[-1].a_original.value
+data modify storage glm:interpreter evaluate.assign.value set from storage glm:interpreter evaluate.operation.result
 
-function bot:interpreter/evaluate/binary_operation/operations/assign/set
+function glm:interpreter/evaluate/binary_operation/operations/assign/set

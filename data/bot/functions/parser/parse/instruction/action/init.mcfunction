@@ -1,1 +1,1 @@
-execute if data storage bot:parser parent{variant:"end"} run function bot:parser/parse/instruction/action/end
+execute if data storage glm:parser parent{variant:"end"} run function glm:parser/parse/instruction/action/end

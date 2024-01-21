@@ -1,3 +1,3 @@
-data modify storage bot:interpreter registry set value {external:[]}
+data modify storage glm:interpreter registry set value {external:[]}
 
-function bot:interpreter/evaluate/function/registry
+function glm:interpreter/evaluate/function/registry

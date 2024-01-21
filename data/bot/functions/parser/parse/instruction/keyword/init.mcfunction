@@ -1,1 +1,1 @@
-data modify storage bot:parser close set value true
+data modify storage glm:parser close set value true

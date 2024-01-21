@@ -1,1 +1,1 @@
-data modify storage bot:interpreter evaluate.stack[-1].metadata.return set from storage bot:interpreter evaluate.return_value
+data modify storage glm:interpreter evaluate.stack[-1].metadata.return set from storage glm:interpreter evaluate.return_value
