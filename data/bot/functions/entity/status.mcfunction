@@ -1,1 +1,0 @@
-execute if data entity @s {data:{status:"compile"}} run function bot:entity/status/compile
