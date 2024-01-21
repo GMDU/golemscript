@@ -1,4 +1,4 @@
-data modify storage glm:interpreter utils.stringify.target set from storage glm:interpreter evaluate.stack[-1].args[0]
+data modify storage glm:interpreter utils.stringify.target set from storage glm:api/interpreter/function execute.args[0]
 
 function glm:interpreter/utils/stringify/init
 

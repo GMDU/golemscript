@@ -1,4 +1,4 @@
-data modify storage moxlib:api/string/from_array target set from storage glm:interpreter evaluate.stack[-1].args[0].value
+data modify storage moxlib:api/string/from_array target set from storage glm:api/interpreter/function execute.args[0].value
 function moxlib:api/string/from_array
 data modify storage glm:api/interpreter/function execute.return set value {type: "literal", variant: "integer", value: 0}
 scoreboard players reset $value glm.interpreter

@@ -1,1 +1,1 @@
-data modify storage glm:api/interpreter/function execute.return set from storage glm:interpreter evaluate.stack[-1].args[0].value[0]
+data modify storage glm:api/interpreter/function execute.return set from storage glm:api/interpreter/function execute.args[0].value[0]

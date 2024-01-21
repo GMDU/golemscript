@@ -1,9 +1,9 @@
-data modify storage moxlib:api/string/ascii/encode target set from storage glm:interpreter evaluate.stack[-1].args[0].value[0]
+data modify storage moxlib:api/string/ascii/encode target set from storage glm:api/interpreter/function execute.args[0].value[0]
 
 function moxlib:api/string/ascii/encode
 execute store result score $char glm.interpreter run data get storage moxlib:api/string/ascii/encode output
 
-execute unless score $char glm.interpreter matches 97..122 run data modify storage glm:api/interpreter/function execute.return.value append from storage glm:interpreter evaluate.stack[-1].args[0].value[0]
+execute unless score $char glm.interpreter matches 97..122 run data modify storage glm:api/interpreter/function execute.return.value append from storage glm:api/interpreter/function execute.args[0].value[0]
 execute unless score $char glm.interpreter matches 97..122 run return -1
 
 execute store result storage moxlib:api/string/ascii/decode target int 1 run scoreboard players remove $char glm.interpreter 32

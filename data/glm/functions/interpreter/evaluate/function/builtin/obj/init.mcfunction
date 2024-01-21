@@ -5,5 +5,5 @@ data remove storage glm:interpreter temp.args
 
 data modify storage glm:api/interpreter/function execute.return set value {type: "literal", variant: "object", value: []}
 
-execute if data storage glm:interpreter evaluate.stack[-1].metadata{type: "object"} run data modify storage glm:api/interpreter/function execute.return.value set from storage glm:interpreter evaluate.stack[-1].args[0].value
-execute if data storage glm:interpreter evaluate.stack[-1].metadata{type: "array"} if data storage glm:api/interpreter/function execute.args[0].value[0].value[] run function glm:interpreter/evaluate/function/builtin/obj/iterate
+execute if data storage glm:api/interpreter/function execute.metadata{type: "object"} run data modify storage glm:api/interpreter/function execute.return.value set from storage glm:api/interpreter/function execute.args[0].value
+execute if data storage glm:api/interpreter/function execute.metadata{type: "array"} if data storage glm:api/interpreter/function execute.args[0].value[0].value[] run function glm:interpreter/evaluate/function/builtin/obj/iterate

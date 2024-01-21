@@ -1,7 +1,7 @@
 # random (min, max) = RANDOM_NUMBER % (max - min + 1) + min
 
-execute store result score .min glm.interpreter run data get storage glm:interpreter evaluate.stack[-1].args[0].value
-execute store result score .max glm.interpreter run data get storage glm:interpreter evaluate.stack[-1].args[1].value
+execute store result score .min glm.interpreter run data get storage glm:api/interpreter/function execute.args[0].value
+execute store result score .max glm.interpreter run data get storage glm:api/interpreter/function execute.args[1].value
 
 function moxlib:api/math/random
 
