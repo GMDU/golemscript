@@ -1,7 +1,7 @@
 data modify storage glm:interpreter evaluate.stack[-1].value set from storage glm:interpreter evaluate.result
 
 data modify storage glm:interpreter evaluate.operation.current set from storage glm:interpreter evaluate.stack[-1].variant
-execute store result score $value bot.interpreter run data get storage glm:interpreter evaluate.stack[-1].value.value
+execute store result score $value glm.interpreter run data get storage glm:interpreter evaluate.stack[-1].value.value
 
 data modify storage glm:interpreter evaluate.operation.result set value {type:"undefined",value: false}
 

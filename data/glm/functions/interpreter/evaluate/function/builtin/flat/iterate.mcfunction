@@ -1,4 +1,4 @@
-execute store result score $flat_depth bot.interpreter run data get storage glm:interpreter evaluate.stack[-1].metadata.stack[-1].depth
+execute store result score $flat_depth glm.interpreter run data get storage glm:interpreter evaluate.stack[-1].metadata.stack[-1].depth
 data modify storage glm:interpreter evaluate.stack[-1].metadata.current set from storage glm:interpreter evaluate.stack[-1].metadata.stack[-1].value[0]
 data remove storage glm:interpreter evaluate.stack[-1].metadata.stack[-1].value[0]
 

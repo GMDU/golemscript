@@ -1,5 +1,5 @@
-scoreboard players operation $target moxlib.api.math.power = .a bot.interpreter
-scoreboard players operation $power moxlib.api.math.power = .b bot.interpreter
+scoreboard players operation $target moxlib.api.math.power = .a glm.interpreter
+scoreboard players operation $power moxlib.api.math.power = .b glm.interpreter
 
 function moxlib:api/math/power
 

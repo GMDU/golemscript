@@ -1,9 +1,9 @@
-execute store result score $index bot.interpreter run random value 0..2147483646
-execute store result score $count bot.interpreter run data get storage glm:interpreter evaluate.stack[-1].args[0].value
+execute store result score $index glm.interpreter run random value 0..2147483646
+execute store result score $count glm.interpreter run data get storage glm:interpreter evaluate.stack[-1].args[0].value
 
-scoreboard players operation $index bot.interpreter %= $count bot.interpreter
+scoreboard players operation $index glm.interpreter %= $count glm.interpreter
 
-execute store result storage glm:interpreter temp.macro.index int 1 run scoreboard players get $index bot.interpreter
+execute store result storage glm:interpreter temp.macro.index int 1 run scoreboard players get $index glm.interpreter
 
 function glm:interpreter/evaluate/function/builtin/shuffle/macro with storage glm:interpreter temp.macro
 

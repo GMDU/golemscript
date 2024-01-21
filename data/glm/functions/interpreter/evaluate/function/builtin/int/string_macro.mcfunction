@@ -1,1 +1,1 @@
-$scoreboard players set $value bot.interpreter $(output)
+$scoreboard players set $value glm.interpreter $(output)

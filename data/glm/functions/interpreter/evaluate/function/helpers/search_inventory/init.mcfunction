@@ -4,6 +4,6 @@ data modify storage glm:interpreter helpers.search_inventory.target append from 
 
 data modify storage glm:interpreter helpers.search_inventory.output set value {slot:-1b,id:"minecraft:air"}
 
-scoreboard players set $slot bot.interpreter 0
+scoreboard players set $slot glm.interpreter 0
 
 function glm:interpreter/evaluate/function/helpers/search_inventory/iterate

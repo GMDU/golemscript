@@ -1,4 +1,4 @@
-execute store result score .index bot.interpreter run data get storage glm:interpreter evaluate.result.value
+execute store result score .index glm.interpreter run data get storage glm:interpreter evaluate.result.value
 data modify storage glm:interpreter evaluate.parameters.result set value {type:"undefined",value: false}
 
 function glm:interpreter/evaluate/literal/array/parameters/iterate

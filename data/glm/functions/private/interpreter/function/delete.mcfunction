@@ -1,1 +1,1 @@
-$execute store success score $success bot.private run data remove storage glm:interpreter registry.builtin[{id:"$(target)"}]
+$execute store success score $success glm.private run data remove storage glm:interpreter registry.builtin[{id:"$(target)"}]
