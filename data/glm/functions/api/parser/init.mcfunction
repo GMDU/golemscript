@@ -6,8 +6,8 @@ function glm:parser/init
 
 data remove storage glm:api/parser init
 
-execute if data storage glm:parser {exit:false} run data modify storage glm:api/parser init.error set from storage glm:parser output
-execute if data storage glm:parser {exit:false} run return 400
+execute unless data storage glm:parser {raise:""} run data modify storage glm:api/parser init.error set from storage glm:parser output
+execute unless data storage glm:parser {raise:""} run return 400
 
 data modify storage glm:api/parser init.output set from storage glm:parser output
 

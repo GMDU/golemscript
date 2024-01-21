@@ -1,3 +1,4 @@
+data remove storage glm:interpreter error
 data modify storage glm:api/interpreter stdio.out set value []
 data modify storage glm:api/interpreter stdio.error set value []
 function glm:interpreter/evaluate/init
