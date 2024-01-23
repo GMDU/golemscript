@@ -2,5 +2,4 @@ execute unless data storage glm:interpreter evaluate.stack[-1].b{type:"literal",
 execute unless data storage glm:interpreter evaluate.stack[-1].b{type:"literal",variant:"object"} run return -1
 
 data modify storage glm:interpreter evaluate.operation.result set from storage glm:interpreter evaluate.stack[-1].a
-data modify storage glm:interpreter evaluate.operation.result.original_value set value []
 function glm:interpreter/evaluate/binary_operation/operations/maths/add/object/iterate

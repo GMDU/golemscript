@@ -3,4 +3,3 @@ execute unless data storage glm:interpreter evaluate.stack[-1].b{type:"literal",
 
 data modify storage glm:interpreter evaluate.operation.result set from storage glm:interpreter evaluate.stack[-1].a
 data modify storage glm:interpreter evaluate.operation.result.value append from storage glm:interpreter evaluate.stack[-1].b.value[]
-data modify storage glm:interpreter evaluate.operation.result.original_value append from storage glm:interpreter evaluate.stack[-1].b.original_value[]
