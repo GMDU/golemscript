@@ -1,2 +1,2 @@
-execute unless data storage glm:parser stack[-1].metadata{status:"closed"} run data modify storage glm:parser stack append value {type:"expression",metadata:{close:{type:"single",value:"^n"}}}
+execute unless data storage glm:parser stack[-1].metadata{status:"closed"} run function glm:parser/parse/instruction/set_expression
 execute if data storage glm:parser stack[-1].metadata{status:"closed"} run data modify storage glm:parser close set value true
