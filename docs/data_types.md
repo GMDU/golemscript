@@ -62,7 +62,7 @@ Strings can be indexed with a following index integer, contained in square brack
 ```
 
 ## Regex
-Regex describes a pattern for a regular expression, and can be used in the [match](stdlib.md#match) function.  
+Regex describes a pattern for a regular expression, and can be used in the [match](stdlib/string.md#match) function.  
 They are written as a regular expression pattern, between two `/`.
 
 For more details on valid regular expressions, see the [regex library](https://modrinth.com/datapack/regex){target=_blank}.
@@ -73,7 +73,7 @@ For more details on valid regular expressions, see the [regex library](https://m
 ```
 
 ## Resource
-Resource is a data type exclusive to Code of Copper, and mirrors the internal resource naming of Minecraft.  
+Resource is a data type exclusive to GolemScript, and mirrors the internal resource naming of Minecraft.  
 It is defined as a namespace and id, separated by a `:`. Namespaces and ids follow the same constraints as variable names.  
 Optionally, the namespace can be omitted, at which point it will default to `minecraft` as the namespace.
 

@@ -39,38 +39,6 @@ loop 20
 end
 ```
 
-## Pathfinding algorithm
-```rb
-let last = [0,0]
-
-func check(res, x, z)
-  if getblock(x,-1,z) == res && last != [x*-1,z*-1]
-    last = [x,z]
-    move(x,0,z)
-    return true
-  end
-  return false
-end
-
-func path(res)
-  if check(res, 1, 0)
-    return true
-  end
-  if check(res, -1, 0)
-    return true
-  end
-  if check(res, 0, 1)
-    return true
-  end
-  if check(res, 0, -1)
-    return true
-  end
-end
-
-while path(:stone)
-end
-```
-
 ## Two Sum solution
 A solution to the [leetcode two sum](https://leetcode.com/problems/two-sum/description/) problem.  
 Written by amandin on Discord.

@@ -5,21 +5,21 @@
 ```js
 let <variable> = <value>
 ```
-Assigns `value` to `variable`, in the current scope[^1].  
+Assigns `value` to `variable`, in the current [scope](glossary.md#scope).  
 If `variable` is already assigned in the current scope, then it throws an error.
 
 ### Var
 ```js
 var <variable> = <value>
 ```
-Assigns `value` to `variable`, in the global scope[^1].  
+Assigns `value` to `variable`, in the global [scope](glossary.md#scope).  
 If `variable` is already assigned, then it throws an error.
 
 ### Const
 ```js
 const <variable> = <value>
 ```
-Assigns `value` to `variable`, in the current scope[^1].  
+Assigns `value` to `variable`, in the current [scope](glossary.md#scope).  
 If `variable` is already assigned, then it throws an error.  
 `variable` cannot be re-assigned by any means.
 
@@ -86,8 +86,3 @@ end
 ```
 Sets `value` as the result of calling the current function, and stops executing that function.  
 If used outside of a function, it throws an error.
-
-[^1]:
-A scope begins when you enter a [block](syntax.md#blocks), and ends when you leave it.  
-When a block is left, variables defined in that scope are removed.  
-Variables defined before a block is entered are also accessible in that block.

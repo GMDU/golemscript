@@ -6,6 +6,7 @@ Types that are not data types on their own, but collections of types for the pur
 ### Enumerable
 An enumerable is any type that has a series of sub-elements, and can be indexed.  
 The current types that belong to the enumerable category are:  
+
 - [string](data_types.md#string)  
 - [array](data_types.md##array)  
 - [object](data_types.md##object)  
@@ -41,3 +42,16 @@ The size of an [object](data_types.md#object) is the number of keys.
 A value is truthy if its [size](#size) is not zero.  
 A resource is always truthy.  
 Undefined is always falsey (not truthy).  
+
+## Scope
+A scope begins when you enter a [block](syntax.md#blocks), and ends when you leave it.  
+When a block is left, variables defined in that scope are removed.  
+Variables defined before a block is entered are also accessible in that block.  
+There is also a global scope, which is accessible everywhere in the program.  
+Variables defined in the global scope last the entire program.  
+
+## Runtime
+A runtime is a datapack that implements a user interface with GolemScript, allowing you to run programs more easily, and without using the GolemScript API.
+
+## Extension
+An extension is a datapack that uses the GolemScript API to add new language features, without imeplementing a full user interface. Extensions are used in conjunction with a runtime.
