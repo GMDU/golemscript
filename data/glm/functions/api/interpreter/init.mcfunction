@@ -1,6 +1,10 @@
 execute unless data storage glm:api/interpreter init.stack[] run data modify storage glm:api/interpreter init.error set value "[API] Expected a list as a stack."
 execute unless data storage glm:api/interpreter init.stack[] run return 400
 
+execute unless data storage glm:api/interpreter init.variables[] run data modify storage glm:api/interpreter init.variables set value []
+execute unless data storage glm:api/interpreter init.functions[] run data modify storage glm:api/interpreter init.functions set value []
+execute unless data storage glm:api/interpreter init.scope run data modify storage glm:api/interpreter init.scope set value 0
+
 data modify storage glm:interpreter evaluate.stack set from storage glm:api/interpreter init.stack
 data modify storage glm:interpreter variables set from storage glm:api/interpreter init.variables
 data modify storage glm:interpreter registry.custom set from storage glm:api/interpreter init.functions
