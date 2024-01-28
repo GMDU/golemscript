@@ -47,6 +47,7 @@ nav:
   - 'operators.md'
   - 'keywords.md'
   - 'examples.md'
-  - 'glossary.md'
   - 'api.md'
   - 'runtimes.md'
+  - 'example_runtime.md'
+  - 'glossary.md'
