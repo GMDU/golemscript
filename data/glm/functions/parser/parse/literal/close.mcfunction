@@ -4,4 +4,4 @@ execute if data storage glm:parser stack[-1].metadata.close{closed:true} run dat
 
 data modify storage glm:parser current.consumed set value true
 
-execute unless data storage glm:parser stack[-1].metadata.close{closed:true} unless data storage glm:parser current{value:" "} run data modify storage glm:parser raise set value "Error closing literal."
+execute unless data storage glm:parser stack[-1].metadata.close{closed:true} unless data storage glm:parser current{value:" "} run data modify storage glm:parser raise set value '{"text":"[Literal] Error closing literal."}'
