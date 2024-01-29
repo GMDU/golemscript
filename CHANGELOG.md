@@ -5,7 +5,38 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.3.0-alpha-1] - 2023-12-24
+## [0.3.1] - 2024-01-29
+Expanded the standard library
+
+### Added
+- Many new builtin functions (A full list can be found [here](https://datapack.dev/docs/golemscript/stdlib))
+  - [String processing functions](https://datapack.dev/docs/golemscript/stdlib/string)
+  - [Mathematical functions](https://datapack.dev/docs/golemscript/stdlib/maths)
+  - [Enumerable functions](https://datapack.dev/docs/golemscript/stdlib/enumerable)
+  - [Functions for converting types](https://datapack.dev/docs/golemscript/stdlib/types)
+  - [Various other functions](https://datapack.dev/docs/golemscript/stdlib/misc)
+- The proc data type, which allows functions to be passed as values
+- Curly brace syntax for blocks
+- The runtime/extensions API
+- A default runtime for quickly running programs
+
+### Changed
+- The GolemScript language has been separated from Code of Copper
+  - It is now a standalone datapack library
+  - This allows it to be easily extended using the new API
+  - This datapack now uses the `glm` namespace
+- Forward slashes are now allowed in the id of resources
+- Question marks are now allowed in the body of alphanumerics
+
+### Fixed
+- Calling functions with the incorrect number of arguments is no longer undefined behaviour
+
+### Removed
+- All code relating to Code of Copper
+  - As this datapack is now just a library for GolemScript
+  - All code to do with copper golems and the various structures found in Code of Copper, is still in the [Code of Copper datapack](https://modrinth.com/datapack/code-of-copper)
+
+## [0.3.1-alpha-1] - 2023-12-24
 ### Added
 - Experimental, unstable support for extensions.
   - This should only impact datapack developers wishing to add their own functions.
@@ -226,7 +257,7 @@ Various bug fixes.
 - Print command now works from within a while loop.
 - Blocks now correctly change when placed.
 
-## [0.1.0] - 2023-01-30
+## [0.1.0] - 2023-01-29
 Initial release!
 
 ### Added
