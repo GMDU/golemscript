@@ -11,4 +11,6 @@ data modify storage glm:interpreter variables prepend value {}
 data modify storage glm:interpreter variables[0].name set from storage glm:interpreter evaluate.variable.name.value
 data modify storage glm:interpreter variables[0].value set from storage glm:interpreter evaluate.variable.value
 
+data remove storage glm:interpreter evaluate.variable
+
 execute store result storage glm:interpreter variables[0].scope byte 1 run scoreboard players get $scope glm.interpreter
