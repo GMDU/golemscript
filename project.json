@@ -1,11 +1,9 @@
 {
   "name": "GolemScript",
   "slug": "golemscript",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "game_versions": [
-    "1.20.2",
-    "1.20.3",
-    "1.20.4"
+    "1.21"
   ],
   "summary": "A programming language in a vanilla datapack.",
   "license": "GPL-3.0-or-later",
@@ -16,8 +14,8 @@
     "technology"
   ],
   "dependencies": {
-    "moxlib": "0.5.11",
-    "regex": "0.1.1"
+    "moxlib": "0.5.13",
+    "regex": "0.1.2"
   },
   "dev_dependencies": {},
   "optional_dependencies": {},
