@@ -2,7 +2,8 @@
 execute unless score @s moxlib.api.player.id matches 1.. run function moxlib:api/player/run
 
 # Get pages of the book
-data modify storage glm:runtime temp.pages set from entity @s SelectedItem.tag.pages
+data modify storage glm:runtime temp.pages set value []
+data modify storage glm:runtime temp.pages append from entity @s SelectedItem.components.minecraft:writable_book_content.pages[].raw
 
 # Get the player data from their id
 # The data gets stored in temp.data
