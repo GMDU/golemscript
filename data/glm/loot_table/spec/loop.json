@@ -1,0 +1,22 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "modifier": [
+            {
+              "type": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> LOOP\")\nprint(\"Expected output:\")\nprint(\"hahahahaha\")\nprint(\"---\")\nlet str = \"\"\n\nloop 5\n str += \"ha\" \nend\n\nprint(str)\n\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

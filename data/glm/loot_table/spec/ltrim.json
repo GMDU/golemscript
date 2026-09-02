@@ -1,0 +1,22 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "modifier": [
+            {
+              "type": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> LTRIM\")\nprint(\"Expected output:\")\n\nprint(\"Testing \t\")\n\nprint(\"---\")\n\nprint(ltrim(\"\t Testing \t\"))\n\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

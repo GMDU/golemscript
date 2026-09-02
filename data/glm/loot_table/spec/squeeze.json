@@ -1,0 +1,22 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "modifier": [
+            {
+              "type": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> SQUEEZE\")\nprint(\"Expected output:\")\n\nprint(\"Helo World!\")\nprint(\"abbcd\")\n\nprint(\"---\")\nprint(squeeze(\"Hello, World!!!\"))\nprint(squeeze(\"aabbccdd\", \"acd\"))\n\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

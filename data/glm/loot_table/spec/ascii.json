@@ -1,0 +1,22 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "modifier": [
+            {
+              "type": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> ASCII\")\nprint(\"Expected output:\")\n\nprint(\"A 65\")\nprint(\"! 33\")\n\nprint(\"---\")\n\nprint(\"A \" + str(ascii(\"A\")))\nprint(\"! \" + str(ascii(\"!\")))\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

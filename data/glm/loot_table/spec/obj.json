@@ -1,0 +1,22 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "modifier": [
+            {
+              "type": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> OBJ\")\nprint(\"Expected output:\")\n\nprint({a: 1, b: 2})\n\nprint(\"---\")\n\nprint(\n obj([['a', 1],['b',2]])\n)\n\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
