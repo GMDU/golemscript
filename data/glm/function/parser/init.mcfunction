@@ -4,7 +4,7 @@ data modify storage glm:parser tokenise.target set from storage glm:parser targe
 function glm:parser/tokenise
 
 data modify storage glm:parser iterate.target set from storage glm:parser tokenise.output
-data modify storage glm:parser iterate.target append value "^n"
+data modify storage glm:parser iterate.target append value "\n"
 data modify storage glm:parser iterate.target append value "^x"
 
 function glm:parser/iterate
