@@ -3,5 +3,5 @@ function glm:interpreter/_load
 function glm:version
 
 # Up max command chain length
-gamerule maxCommandChainLength 1048576
-gamerule commandBlockOutput false
+gamerule max_command_sequence_length 1048576
+gamerule command_block_output false
