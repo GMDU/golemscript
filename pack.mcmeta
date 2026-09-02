@@ -1,6 +1,7 @@
 {
   "pack": {
-      "pack_format": 48,
-      "description": "GolemScript: Programming in Minecraft"
+    "description": "GolemScript: Programming in Minecraft",
+    "min_format": 119,
+    "max_format": 119
   }
 }
