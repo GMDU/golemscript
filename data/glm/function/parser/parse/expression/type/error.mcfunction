@@ -1,2 +1,2 @@
-data modify storage glm:parser raise set value '["[Expression] Unexpected character: \'",{"storage":"glm:parser","nbt":"current.value"},"\'. Expected [A-Z, a-z, 0-9, -, /, (, [, {, \\", \\\']"]'
+data modify storage glm:parser raise set value ["[Expression] Unexpected character: '",{"storage":"glm:parser","nbt":"current.value",interpret:true},"'. Expected [A-Z, a-z, 0-9, -, /, (, [, {, \", ']"]
 data modify storage glm:parser current.consumed set value true

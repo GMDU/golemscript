@@ -3,7 +3,7 @@ data modify storage moxlib:api/data/get key.name set from storage glm:interprete
 
 function moxlib:api/data/get
 
-execute if data storage moxlib:api/data/get output{constant:true} run data modify storage glm:interpreter error set value '[{"text":"RuntimeError: Cannot reassign constant "},{"storage":"moxlib:api/data/get","nbt":"output.name","interpret":true}]'
+execute if data storage moxlib:api/data/get output{constant:true} run data modify storage glm:interpreter error set value [{"text":"RuntimeError: Cannot reassign constant "},{"storage":"moxlib:api/data/get","nbt":"output.name","interpret":true}]
 execute if data storage moxlib:api/data/get output{constant:true} run return -1
 
 data modify storage moxlib:api/data/set target set from storage glm:interpreter variables
