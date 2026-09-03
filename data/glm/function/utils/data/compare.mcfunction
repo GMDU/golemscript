@@ -5,3 +5,6 @@ execute store success storage glm:utils/data/compare temp.result byte 1 run data
 
 execute if data storage glm:utils/data/compare temp.result run data modify storage glm:utils/data/compare success set value true
 execute if data storage glm:utils/data/compare temp{result:true} run data modify storage glm:utils/data/compare output set value false
+
+data remove storage glm:utils/data/compare target
+data remove storage glm:utils/data/compare key
