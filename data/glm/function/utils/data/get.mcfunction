@@ -1,0 +1,1 @@
+function glm:utils/data/get/init.macro with storage glm:utils/data/get
