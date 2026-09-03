@@ -1,0 +1,2 @@
+data modify storage glm:utils/string/filter output set value true
+$execute if data storage glm:utils/string/filter {target: ["$(key)"]} run data modify storage glm:utils/string/filter output set value false
