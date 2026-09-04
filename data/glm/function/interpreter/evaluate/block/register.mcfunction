@@ -3,9 +3,9 @@ data modify storage glm:utils/data/collect key set value {type:"instruction",var
 
 function glm:utils/data/collect
 
-data modify storage moxlib:api/data/array/reverse target set from storage glm:utils/data/collect output.match
+data modify storage glm:utils/array/reverse target set from storage glm:utils/data/collect output.match
 
-function moxlib:api/data/array/reverse
+function glm:utils/array/reverse
 
-data modify storage glm:interpreter registry.custom prepend from storage moxlib:api/data/array/reverse output[]
+data modify storage glm:interpreter registry.custom prepend from storage glm:utils/array/reverse output[]
 data modify storage glm:interpreter evaluate.stack[-1].value set from storage glm:utils/data/collect output.remain
