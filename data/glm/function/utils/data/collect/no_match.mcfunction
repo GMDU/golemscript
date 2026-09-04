@@ -1,0 +1,1 @@
+data modify storage glm:utils/data/compare output.remain append from storage glm:utils/data/collect temp.current
