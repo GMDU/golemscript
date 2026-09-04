@@ -16,4 +16,5 @@ scoreboard objectives add glm.private dummy
 scoreboard objectives add glm.runtime dummy
 
 # Utils objectives
+scoreboard objectives add glm.utils.player.id dummy
 scoreboard objectives add glm.utils.array.slice dummy
