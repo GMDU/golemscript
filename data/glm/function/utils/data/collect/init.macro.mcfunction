@@ -4,4 +4,4 @@ data modify storage glm:utils/data/collect output.remain set from storage glm:ut
 $data remove storage glm:utils/data/collect output.remain[$(key)]
 $data modify storage glm:utils/data/collect temp.array append from storage glm:utils/data/collect target[$(key)]
 
-function glm:utils/data/collect/iterate
+execute if data storage glm:utils/data/collect temp.array[] run function glm:utils/data/collect/iterate
