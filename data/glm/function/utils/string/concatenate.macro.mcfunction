@@ -1,0 +1,1 @@
+$data modify storage glm:utils/string/concatenate output set value "$(target)$(suffix)"
