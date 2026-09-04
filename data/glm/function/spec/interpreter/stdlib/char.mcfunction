@@ -1,0 +1,2 @@
+function glm:spec/helpers/check/stdout {describes: "CHAR 1", expects: ["'127  '"], receives: ["print('127 ' + str(char(127)))"]}
+function glm:spec/helpers/check/stdout {describes: "CHAR 2", expects: ["'7  '"], receives: ["print('7 ' + str(char(7)))"]}

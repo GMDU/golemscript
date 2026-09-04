@@ -1,0 +1,2 @@
+data modify storage glm:api/interpreter stdio.out append from storage glm:api/interpreter/function execute.args[0]
+data modify storage glm:api/interpreter/function execute.return set value {type:"undefined",value: false}
