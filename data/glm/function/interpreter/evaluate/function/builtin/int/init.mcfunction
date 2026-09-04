@@ -6,4 +6,4 @@ execute if data storage glm:interpreter temp{variant:"integer"} run return -1
 execute if data storage glm:interpreter temp{variant:"string"} run function glm:interpreter/evaluate/function/builtin/int/string
 execute if data storage glm:interpreter temp{variant:"string"} run return -1
 
-data modify storage glm:interpreter error set value '[{"text":"RuntimeError: Cannot convert type "},{"storage":"glm:interpreter","nbt":"temp.variant"},{"text":" to integer"}]'
+data modify storage glm:interpreter error set value [{"text":"RuntimeError: Cannot convert type "},{"storage":"glm:interpreter","nbt":"temp.variant",interpret:true},{"text":" to integer"}]

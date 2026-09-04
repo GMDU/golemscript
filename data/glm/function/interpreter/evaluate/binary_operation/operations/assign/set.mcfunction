@@ -3,7 +3,7 @@ data modify storage glm:utils/data/get key.name set from storage glm:interpreter
 
 function glm:utils/data/get
 
-execute if data storage glm:utils/data/get output{constant:true} run data modify storage glm:interpreter error set value '[{"text":"RuntimeError: Cannot reassign constant "},{"storage":"glm:utils/data/get","nbt":"output.name","interpret":true}]'
+execute if data storage glm:utils/data/get output{constant:true} run data modify storage glm:interpreter error set value [{"text":"RuntimeError: Cannot reassign constant "},{"storage":"glm:utils/data/get","nbt":"output.name","interpret":true}]
 execute if data storage glm:utils/data/get output{constant:true} run return -1
 
 data modify storage glm:utils/data/set target set from storage glm:interpreter variables

@@ -4,7 +4,7 @@ execute store result storage glm:utils/data/get key.scope byte 1 run scoreboard 
 
 function glm:utils/data/get
 
-execute if data storage glm:utils/data/get {success:true} run data modify storage glm:interpreter error set value '[{"text":"RuntimeError: Cannot redeclare variable "},{"storage":"glm:utils/data/get","nbt":"output.name","interpret":true}]'
+execute if data storage glm:utils/data/get {success:true} run data modify storage glm:interpreter error set value [{"text":"RuntimeError: Cannot redeclare variable "},{"storage":"glm:utils/data/get","nbt":"output.name","interpret":true}]
 execute if data storage glm:utils/data/get {success:true} run return -1
 
 data modify storage glm:interpreter variables prepend value {}
