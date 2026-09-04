@@ -2,7 +2,7 @@ execute unless data storage glm:interpreter evaluate.stack[-1].args[{variant:"un
 
 function glm:interpreter/evaluate/instruction/execute/command/return/iterate
 
-execute unless data storage glm:interpreter evaluate.stack[] run data modify storage glm:interpreter error set value '{"text":"RuntimeError: Cannot use return outside of a function"}'
+execute unless data storage glm:interpreter evaluate.stack[] run data modify storage glm:interpreter error set value "RuntimeError: Cannot use return outside of a function"
 execute unless data storage glm:interpreter evaluate.stack[] run return -1
 
 data remove storage glm:interpreter evaluate.stack[-1]

@@ -5,4 +5,4 @@ execute if data storage glm:interpreter temp.function.arg{type:"literal", varian
 
 execute if data storage glm:api/interpreter/function execute.metadata.type run return -1
 
-data modify storage glm:interpreter error set value '{"text": "RuntimeError: Invalid first argument in function \'reduce\', expected type \'array\', \'string\' or \'object\'."}'
+data modify storage glm:interpreter error set value "RuntimeError: Invalid first argument in function 'reduce', expected type 'array', 'string' or 'object'."
