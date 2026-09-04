@@ -1,0 +1,1 @@
+$data modify storage glm:parser stack[-1].value set value $(output)

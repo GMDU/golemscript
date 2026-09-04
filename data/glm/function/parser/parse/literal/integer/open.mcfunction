@@ -1,14 +1,6 @@
-data remove storage glm:parser stack[-1].metadata.input
-execute if data storage glm:parser current{value:"0"} run data modify storage glm:parser stack[-1].metadata.input set value 0b
-execute if data storage glm:parser current{value:"1"} run data modify storage glm:parser stack[-1].metadata.input set value 1b
-execute if data storage glm:parser current{value:"2"} run data modify storage glm:parser stack[-1].metadata.input set value 2b
-execute if data storage glm:parser current{value:"3"} run data modify storage glm:parser stack[-1].metadata.input set value 3b
-execute if data storage glm:parser current{value:"4"} run data modify storage glm:parser stack[-1].metadata.input set value 4b
-execute if data storage glm:parser current{value:"5"} run data modify storage glm:parser stack[-1].metadata.input set value 5b
-execute if data storage glm:parser current{value:"6"} run data modify storage glm:parser stack[-1].metadata.input set value 6b
-execute if data storage glm:parser current{value:"7"} run data modify storage glm:parser stack[-1].metadata.input set value 7b
-execute if data storage glm:parser current{value:"8"} run data modify storage glm:parser stack[-1].metadata.input set value 8b
-execute if data storage glm:parser current{value:"9"} run data modify storage glm:parser stack[-1].metadata.input set value 9b
-execute if data storage glm:parser stack[-1].metadata.input run data modify storage glm:parser stack[-1].value append from storage glm:parser stack[-1].metadata.input
-execute if data storage glm:parser stack[-1].metadata.input run data modify storage glm:parser current.consumed set value true
-execute unless data storage glm:parser stack[-1].metadata.input run data modify storage glm:parser stack[-1].metadata.status set value "convert"
+function glm:parser/parse/literal/integer/filters/body
+
+execute if data storage glm:utils/string/filter {output:true} run return run data modify storage glm:parser stack[-1].metadata.status set value "convert"
+
+data modify storage glm:parser stack[-1].value append from storage glm:parser current.value
+data modify storage glm:parser current.consumed set value true
