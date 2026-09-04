@@ -1,3 +1,5 @@
+data modify storage glm:spec/helpers run set value {out: [], error: []}
+
 $data modify storage glm:api/parser init.target set value $(program)
 function glm:api/parser/init
 
