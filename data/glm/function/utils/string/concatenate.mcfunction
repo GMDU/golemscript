@@ -1,0 +1,1 @@
+function glm:utils/string/concatenate.macro with storage glm:utils/string/concatenate

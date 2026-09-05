@@ -3,14 +3,12 @@
 execute store result score .min glm.interpreter run data get storage glm:api/interpreter/function execute.args[0].value
 execute store result score .max glm.interpreter run data get storage glm:api/interpreter/function execute.args[1].value
 
-function moxlib:api/math/random
-
 # max - min + 1
 scoreboard players set .mod glm.interpreter 1
 scoreboard players operation .mod glm.interpreter += .max glm.interpreter
 scoreboard players operation .mod glm.interpreter -= .min glm.interpreter
 
-scoreboard players operation .result glm.interpreter = $rng moxlib.api.math.random
+execute store result score .result glm.interpreter run random value 0..2147483646
 scoreboard players operation .result glm.interpreter %= .mod glm.interpreter
 scoreboard players operation .result glm.interpreter += .min glm.interpreter
 

@@ -1,5 +1,5 @@
 # Lookup the data from the db
-execute store result storage glm:runtime temp.id int 1 run scoreboard players get @s moxlib.api.player.id
+execute store result storage glm:runtime temp.id int 1 run scoreboard players get @s glm.utils.player.id
 function glm:runtime/get_data with storage glm:runtime temp
 
 # Set the interpreter input from the data

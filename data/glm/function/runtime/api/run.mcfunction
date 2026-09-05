@@ -1,5 +1,5 @@
 # Give the player an ID, so we can keep track of them in the db
-execute unless score @s moxlib.api.player.id matches 1.. run function moxlib:api/player/run
+function glm:utils/player/id
 
 # Get pages of the book
 data modify storage glm:runtime temp.pages set value []
@@ -7,7 +7,7 @@ data modify storage glm:runtime temp.pages append from entity @s SelectedItem.co
 
 # Get the player data from their id
 # The data gets stored in temp.data
-execute store result storage glm:runtime temp.id int 1 run scoreboard players get @s moxlib.api.player.id
+execute store result storage glm:runtime temp.id int 1 run scoreboard players get @s glm.utils.player.id
 function glm:runtime/get_data with storage glm:runtime temp
 
 # Check whether the input from the book is different from the previous input
