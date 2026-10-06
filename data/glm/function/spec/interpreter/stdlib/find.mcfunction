@@ -1,0 +1,3 @@
+function glm:spec/helpers/check/stdout {describes: "FIND 1", expects: ["2"], receives: ["let last = 0", "find([5,4,3,2,1],->(x){last = x\nreturn x < 3})", "echo(last)"]}
+function glm:spec/helpers/check/return {describes: "FIND 2", expects: ["'?'"], receives: ["find('AAAA?', -> (c) c != 'A')"]}
+function glm:spec/helpers/check/return {describes: "FIND 3", expects: ["2"], receives: ["find({a:1,b:2}, -> (k,v) k != 'a')"]}

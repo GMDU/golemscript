@@ -1,14 +1,11 @@
-function glm:spec/interpreter/stdlib/abs
-function glm:spec/interpreter/stdlib/any_every
-function glm:spec/interpreter/stdlib/arr
-function glm:spec/interpreter/stdlib/arrays
-# function glm:spec/interpreter/stdlib/ascii
-function glm:spec/interpreter/stdlib/boolean
-function glm:spec/interpreter/stdlib/call
-# function glm:spec/interpreter/stdlib/char
-function glm:spec/interpreter/stdlib/const
-function glm:spec/interpreter/stdlib/contains_index
-function glm:spec/interpreter/stdlib/delete_set
-function glm:spec/interpreter/stdlib/filter
+data modify storage observer:api/test/register target set value {name: "Golemscript Batch 1", entrypoint: "glm:spec/interpreter/batch_1"}
+function observer:api/test/register
 
-function glm:spec/interpreter/stdlib/map
+data modify storage observer:api/test/register target set value {name: "Golemscript Batch 2", entrypoint: "glm:spec/interpreter/batch_2"}
+function observer:api/test/register
+
+data modify storage observer:api/test/register target set value {name: "Golemscript Batch 3", entrypoint: "glm:spec/interpreter/batch_3"}
+function observer:api/test/register
+
+data modify storage observer:api/test/register target set value {name: "Golemscript Batch 4", entrypoint: "glm:spec/interpreter/batch_4"}
+function observer:api/test/register
