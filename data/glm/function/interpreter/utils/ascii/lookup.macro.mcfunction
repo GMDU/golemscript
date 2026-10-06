@@ -1,0 +1,1 @@
+$data modify storage glm:utils ascii.output set from storage glm:utils ascii.table[$(target)]
