@@ -1,0 +1,11 @@
+function glm:spec/interpreter/stdlib/random
+function glm:spec/interpreter/stdlib/reduce
+function glm:spec/interpreter/stdlib/regex
+function glm:spec/interpreter/stdlib/repeat
+function glm:spec/interpreter/stdlib/replace
+function glm:spec/interpreter/stdlib/reverse
+function glm:spec/interpreter/stdlib/rtrim
+function glm:spec/interpreter/stdlib/shuffle
+function glm:spec/interpreter/stdlib/sign
+function glm:spec/interpreter/stdlib/sleep
+function glm:spec/interpreter/stdlib/slice

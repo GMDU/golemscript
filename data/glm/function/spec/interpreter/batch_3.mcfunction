@@ -4,3 +4,8 @@ function glm:spec/interpreter/stdlib/ltrim
 function glm:spec/interpreter/stdlib/map
 function glm:spec/interpreter/stdlib/maths
 function glm:spec/interpreter/stdlib/min_max
+function glm:spec/interpreter/stdlib/obj
+function glm:spec/interpreter/stdlib/objects
+function glm:spec/interpreter/stdlib/prefix
+function glm:spec/interpreter/stdlib/print
+function glm:spec/interpreter/stdlib/proc

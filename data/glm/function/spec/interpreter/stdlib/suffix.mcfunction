@@ -1,0 +1,2 @@
+function glm:spec/helpers/check/return {describes: "SUFFIX? 1", expects: ["true"], receives: ["suffix?('hello', 'lo')"]}
+function glm:spec/helpers/check/return {describes: "SUFFIX? 2", expects: ["false"], receives: ["suffix?('howdy', 'lo')"]}
