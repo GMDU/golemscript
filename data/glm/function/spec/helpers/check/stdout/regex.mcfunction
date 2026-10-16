@@ -1,4 +1,3 @@
-$say $(describes)
 function observer:api/test/init
 $data modify storage observer:test/it describes set value "$(describes)"
   data modify storage observer:test/it expects set value true
