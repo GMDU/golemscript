@@ -1,0 +1,1 @@
+function glm:spec/helpers/check/stdout {describes: "BOOLEAN", expects: ["[true, false, true, false, false, true]"], receives: ["echo([1 < 2, 2 < 1, 1 == 2 || 'foo' == 'foo', false || false && true, true && true && true && false, 4 != 5])"]}

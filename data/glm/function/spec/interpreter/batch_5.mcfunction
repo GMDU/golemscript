@@ -1,0 +1,10 @@
+function glm:spec/interpreter/stdlib/sort
+function glm:spec/interpreter/stdlib/split
+function glm:spec/interpreter/stdlib/squeeze
+function glm:spec/interpreter/stdlib/str
+function glm:spec/interpreter/stdlib/suffix
+function glm:spec/interpreter/stdlib/trim
+function glm:spec/interpreter/stdlib/typeof
+function glm:spec/interpreter/stdlib/upper
+function glm:spec/interpreter/stdlib/variables
+function glm:spec/interpreter/stdlib/while

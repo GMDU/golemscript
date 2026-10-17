@@ -1,0 +1,1 @@
+function glm:spec/helpers/check/stdout {describes: "TYPEOF", expects: ["['integer', 'string', 'array', 'object', 'regex', 'boolean', 'undefined', 'resource', 'proc']"], receives: ["echo([ typeof(1), typeof(''), typeof([]), typeof({}), typeof(/hi/), typeof(true), typeof(undefined), typeof(:foo), typeof(-> () 1)])"]}
